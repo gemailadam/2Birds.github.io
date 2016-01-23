@@ -1,0 +1,1 @@
+<a href="">&copy;copyright adam <?php echo date('Y') ?> </a>

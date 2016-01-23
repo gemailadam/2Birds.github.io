@@ -9,3 +9,12 @@ Tags: 1-column 2-column 3-column left-right-sidebar custom-color rtl-language tr
 Copyright:
 Licence: GPL V2
 */
+* {margin: 0;padding: 0;}
+html {color: #fff;}
+body {background: #222;}
+a {color: #fff;}
+ul , li {list-style: none;}
+.qwe-container {background: transparent;}
+header {background: #dd3333;}
+footer {background: #dd3333;}
+.qwe-sidebar {background: #dd3333;display: inline-block;}
