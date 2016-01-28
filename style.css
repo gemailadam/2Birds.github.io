@@ -17,4 +17,5 @@ ul , li {list-style: none;}
 .qwe-container {background: transparent;}
 header {background: #dd3333;}
 footer {background: #dd3333;}
-.qwe-sidebar {background: #dd3333;display: inline-block;}
+.qwe-sidebar {background: #dd3333;display:block;float: left;}
+

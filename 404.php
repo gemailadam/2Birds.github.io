@@ -16,7 +16,7 @@
 				<div class="qwe-page">
 					<!-- page column width Start -->
 					<div class="qwe-col-xl-9 qwe-col-lg-9 qwe-col-md-12 qwe-col-sm-12 qwe-col-vs-12">
-  						<?php get_template_part('main-structure/main_single'); ?>
+  						<h1>Opps This Page Dose not exist</h1>
 					</div>
 					<!-- page column width END -->
 				</div>
