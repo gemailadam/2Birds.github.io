@@ -15,7 +15,16 @@ body {background: #222;}
 a {color: #fff;}
 ul , li {list-style: none;}
 .qwe-container {background: transparent;}
-header {background: #dd3333;}
+header {}
 footer {background: #dd3333;}
 .qwe-sidebar {background: #dd3333;display:block;float: left;}
 
+.qwe-header-img img {width: 100%;}
+.qwe-nav {width:100%;background:#000;}
+.qwe-nav div > ul > li {display: inline-block;}
+.qwe-nav div > ul > li a {display: inline-block;padding: 10px;}
+
+
+.qwe-site-title a {display: block;background-color: transparent;position: absolute;left: 20%;}
+.qwe-site-title a:first-child {top:30%;}
+.qwe-site-title a:last-child {top: 40%;}
