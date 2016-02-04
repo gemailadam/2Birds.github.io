@@ -27,4 +27,5 @@ footer {background: #dd3333;}
 
 .qwe-site-title a {display: block;background-color: transparent;position: absolute;left: 20%;}
 .qwe-site-title a:first-child {top:30%;}
-.qwe-site-title a:last-child {top: 40%;}
+.qwe-site-title a:last-child {top: 50%;}
+.qwe-site-title a:nth-child(2) {top:40%;}

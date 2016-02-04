@@ -3,6 +3,8 @@
 </div>
 <div class="qwe-site-title">
 	<a href="<?php the_permalink();?>"><?php bloginfo('title' ); ?></a>
+	<a href="<?php echo get_theme_mod( 'qwe-description1-link', '#' ); ?>"><?php echo get_theme_mod( 'qwe-description1', '- THEME -' ); ?></a>	
+	<a href="#">&#8964;</a>	
 	<a href="<?php  the_permalink();?>"><?php bloginfo('description' );?></a>
 </div>
 <div class="qwe-header-img">
