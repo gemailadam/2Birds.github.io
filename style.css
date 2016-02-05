@@ -25,7 +25,9 @@ footer {background: #dd3333;}
 .qwe-nav div > ul > li a {display: inline-block;padding: 10px;}
 
 
-.qwe-site-title a {display: block;background-color: transparent;position: absolute;left: 20%;}
-.qwe-site-title a:first-child {top:30%;}
-.qwe-site-title a:last-child {top: 50%;}
-.qwe-site-title a:nth-child(2) {top:40%;}
+.qwe-site-title a {display: block;background-color: transparent;position: absolute;left: 20%;text-decoration: none;}
+.qwe-site-title a {text-shadow:2px 2px 3px #000;}
+.qwe-site-title a:first-child {top:30%;font-size: 250%;}
+.qwe-site-title a:last-child {top: 50%;font-size: 200%;}
+.qwe-site-title a:nth-child(2) {top:40%;font-size: 150%;left: 30%;}
+.qwe-site-title a:nth-child(3) {top:60%;font-size: 850%;left:30%;}

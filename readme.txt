@@ -212,4 +212,71 @@ add_action('customize_register','qwe_slideshow' );
 			 			 ?>
 			 		</div>
 			 	</div-->
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+function add_sections_controls_settings ($wp_customize){
+
+// Header Title
+
+    $wp_customize->add_panel( 'panel_qwe', array(
+      'priority'       => 1,
+      'capability'     => 'edit_theme_options',
+      'theme_supports' => '',
+      'title'          => 'Theme Options',
+      'description'    => '',
+      'active_callback' => 'is_page',
+    ) );
+
+
+    $wp_customize->add_section('qwe_header_section',array(
+        'title' =>'Header Titles' ,
+        'description' => 'change and modify header title',
+        'priority' => 1 ,
+        'panel'=> 'panel_qwe',
+        ));
+
+
+        $wp_customize->add_setting('qwe-description1',array('default' => 'write your description' ,'sanitize_callback'=>'esc_textarea'));
+        $wp_customize->add_control('qwe-description1-control',array(
+                'description' =>'modify description to your header title',        
+                'settings' => 'qwe-description1', 
+                'type' => 'textarea',
+                'label' => 'Description 1',
+                'priority'=>1,
+                'section' => 'qwe_header_section',
+                'transport' => 'postMessage',
+                // 'active_callback' => 'is_front_page',   
+                
+            )
+        );
+
+
+        $wp_customize->add_setting('qwe-description1-link',array('default' => '#','sanitize_callback'=>'esc_url' ));
+
+        $wp_customize->add_control('qwe-description1-link-control',array(
+                'description' =>'add hyperlink to your slideshow gray text area',        
+                'settings' => 'qwe-description1-link', 
+                'type' => 'text',
+                'label' => 'description 1 link refrance',
+                'priority'=>2,
+                'section' => 'qwe_header_section',
+                'transport' => 'postMessage',
+                // 'active_callback' => 'is_front_page',
+                
+            )
+        );
+
+
+}
+
+// add_action('customize_register','customize_register_qwe' );
+add_action('customize_register','add_sections_controls_settings' );
+
+
+
+
+                
 			 

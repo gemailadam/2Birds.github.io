@@ -31,7 +31,7 @@
 		</div>
 
 		<footer>
-				<div class="qwe-col-xl-9 qwe-col-lg-9 qwe-col-md-12 qwe-col-sm-12 qwe-col-vs-12">
+				<div class="qwe-col-xl-12 qwe-col-lg-12 qwe-col-md-12 qwe-col-sm-12 qwe-col-vs-12">
 					<?php get_footer(); ?>
 				</div>
 		</footer>
