@@ -82,7 +82,7 @@ function customize_register_qwe( $wp_customize ) {
         $wp_customize->add_setting('qwe-description1-link',array('default' => '#','sanitize_callback'=>'esc_url' ));
 
         $wp_customize->add_control('qwe-description1-link-control',array(
-                'description' =>'add hyperlink to your slideshow gray text area',        
+                'description' =>'add hyperlink',        
                 'settings' => 'qwe-description1-link', 
                 'type' => 'text',
                 'label' => 'description 1 link refrance',
