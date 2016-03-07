@@ -27,7 +27,13 @@
 				</div>
 			</div>
 		</div>
-
+		<!-- newsletter or gift start-->
+		<div class="qwe-float-newsletter-or-gift">
+			<!-- sidebar Start -->
+				<?php dynamic_sidebar( 'newsletter' ); ?>
+			<!-- sidebar END -->
+		</div>
+		<!-- newsletter or gift end-->
 		<footer>
 				<div class="qwe-col-xl-12 qwe-col-lg-12 qwe-col-md-12 qwe-col-sm-12">
 					<?php get_footer(); ?>
