@@ -39,7 +39,7 @@ footer {background: #dd3333;}
 .qwe-header-img img {width: 100%;position: absolute;}
 
 /*navigation*/
-.qwe-nav li {text-decoration:none;}
+.qwe-nav li a {text-decoration:none;}
 .qwe-nav {width:100%;background:#000;position: fixed;top:0;z-index:1;}
 .qwe-nav div > ul > li {display: inline-block;}
 .qwe-nav div > ul > li a {display: inline-block;padding: 10px;}
@@ -55,6 +55,9 @@ footer {background: #dd3333;}
 .qwe-right-part img {width:100%;}
 .qwe-article {width:70%;text-align:;justify-content: center;vertical-align:middle;padding:5% 15%;}
 
+/*post*/
+.qwe-post-wrapper .qwe-page-title{padding:1% 3%;}
+.qwe-post-wrapper p{padding:1% 3%;}
 /*sidebare*/
 .qwe-sidebar {display:block;float: left;}
 .qwe-float-sidebar {
