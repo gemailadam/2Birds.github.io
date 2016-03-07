@@ -12,6 +12,7 @@
 <title><?php wp_title(''); ?></title>
 
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?> ">
-<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/css/skeleton.min.css ">
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/css/skeleton-col.css">
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/css/skeleton-row-prcentage.css">
 
 <?php wp_head(); ?>
