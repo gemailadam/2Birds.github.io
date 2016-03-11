@@ -20,24 +20,23 @@
 					</div>
 					<!-- page column width END -->
 				</div>
-				<!-- sidebar Start -->
-				<div class="qwe-float-sidebar">
-						<?php get_sidebar(); ?>
-				<!-- sidebar END -->
-				</div>
+
 			</div>
 		</div>
+		<!-- sidebar Start -->
+		<div class="qwe-float-sidebar">
+				<?php get_sidebar(); ?>
+		</div>
+		<!-- sidebar END -->
 		<!-- newsletter or gift start-->
 		<div class="qwe-float-newsletter-or-gift">
-			<!-- sidebar Start -->
 				<?php dynamic_sidebar( 'newsletter' ); ?>
-			<!-- sidebar END -->
 		</div>
 		<!-- newsletter or gift end-->
 		<footer>
-				<div class="qwe-col-xl-12 qwe-col-lg-12 qwe-col-md-12 qwe-col-sm-12">
-					<?php get_footer(); ?>
-				</div>
+			<div class="qwe-col-xl-12 qwe-col-lg-12 qwe-col-md-12 qwe-col-sm-12">
+				<?php get_footer(); ?>
+			</div>
 		</footer>
 
 	</div>
