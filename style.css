@@ -9,15 +9,15 @@ Tags: 1-column 2-column 3-column left-right-sidebar custom-color rtl-language tr
 Copyright:
 Licence: GPL V2
 */
-
+/* #336681 */
 /* admin toolbar */
 #wpadminbar{display: none;}
 
 /*root*/
 * {margin: 0;padding: 0;}
-html {color: #fff;}
+html {color: #000;}
 body {background: #000;}
-a {color: #fff;}
+a {color: #000;}
 ul , li {list-style: none;}
 .qwe-container {background: transparent;}
 header {}
@@ -27,7 +27,7 @@ footer {}
 .qwe-header {}
 .qwe-site-title {}
 .qwe-site-title p {width:50%;padding-top:2%;line-height:8vw;}
-.qwe-site-title a {background-color: transparent;text-decoration: none;display: block;}
+.qwe-site-title a {background-color: transparent;text-decoration: none;display: block;color:#fff;}
 .qwe-site-title a {font-size: 4vw;text-shadow:2px 2px 3px #000;text-align: center;vertical-align:middle;}
 .qwe-site-title a:nth-child(2) {font-size: 3vw;}
 /*.qwe-site-title a:nth-child(3) {font-size: 3vw;}*/
@@ -191,16 +191,16 @@ img#logo {
 
 
 /*navigation*/
-.qwe-nav li a {text-decoration:none;}
+.qwe-nav li a {text-decoration:none;color:#fff;}
 .qwe-nav {width:100%;background:#000;position: fixed;top:0;z-index:1;}
 .qwe-nav div > ul > li {display: inline-block;}
 .qwe-nav div > ul > li a {display: inline-block;padding: 10px;}
 
 /* sticky */
-.qwe-sticky {background-color:#7C472D;margin-bottom:5%;display:inline-block;float: left;}
+.qwe-sticky {background-color:#fff;margin-bottom:5%;display:inline-block;float: left;}
 
 /*main page+sidebar*/
-.qwe-main{background-color:#7C472D;display: inline-block;float: left;}
+.qwe-main{background-color:#fff;display: inline-block;float: left;}
 
 /*page*/
 .qwe-left-part img {width:100%;}
@@ -239,7 +239,7 @@ img#logo {
   position: fixed;right:-22%;
   width:25%;
   /*background-color:#7C472D;*/
-  background-color:#7C472D;
+  background-color:#000;
   top:20%;
   bottom:20%;
   z-index:1;
@@ -251,7 +251,7 @@ img#logo {
 }
 
 .qwe-float-sidebar:hover {
-  background-color:#7C472D;
+  background-color:#fff;
   box-shadow:2px 2px 5px #000;
   position: fixed;
   right:0;
@@ -277,7 +277,7 @@ img#logo {
 .qwe-float-newsletter-or-gift {
   position: fixed;right:-22%;
   width:25%;
-  background-color:#7C472D;
+  background-color:#000;
   /* background-color:#fff; */
   top:82%;
   bottom:0%;
@@ -289,7 +289,7 @@ img#logo {
   box-shadow: inset 0 0 5px #000000 , 0 9px 5px #000000;
 
 }
-.qwe-float-newsletter-or-gift:hover {right:0;}
+.qwe-float-newsletter-or-gift:hover {right:0;background-color:#fff;}
 .qwe-float-newsletter-or-gift .widgettitle{text-shadow:2px 2px 3px #000;}
 .qwe-float-newsletter-or-gift label{text-shadow:2px 2px 3px #000;}
 .qwe-float-newsletter-or-gift li {padding-left:5%;}
@@ -302,6 +302,7 @@ footer{background-color:#7C472D;display: inline-block;float: left;}
 .qwe-footer {box-shadow:2px 2px 5px #000;margin-top:1%;display:inline-block;width:100%;float: left;}
 .qwe-footer li {float: left;padding-left:3%;}
 .qwe-copyright{display:inline-block;width:100%;float: left;background-color:#000;padding: 1% 2%;margin-top:1%;}
+.qwe-copyright a {color:#fff;}
 
 /*sticky*/
 
@@ -385,4 +386,14 @@ footer{background-color:#7C472D;display: inline-block;float: left;}
 }
 
 
+/*footer*/
+/*important if any one add any image element to any footer widget >> support search and find others element that can be add */
+footer{background-color:#fff;}
+footer img {width: 100%;height: 100px; }
+.qwe-footer{background-color:#fff;}
+.qwe-footer li.widget {float: left;padding:1%;}
+.qwe-footer li.widget:first-child { clear: left;}
+.qwe-footer li.widget:last-child { clear: right;}
+.qwe-footer li > ul > li {float:none;}
 
+footer ul, footer li {list-style: none;padding: 0;margin: 0;}/* search for any problem may appear in future */
