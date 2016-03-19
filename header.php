@@ -106,18 +106,18 @@
 
  		<div class="galleryNavigationBullets">
  			<?php 
-
+ 			echo '<p>';	
  			//if ($qwe_dir=='ltr'){
  			$Total_count=3;//u can use total count for the avove for loops
- 				for ($b=1; $b <=$Total_count ; $b++) { 
- 					echo '<a href="javascript: changeimage('.$b.')" class="galleryBullets'.$b.'"><span>Bullet</span></a>';			 			
+			for ($b=1; $b <=$Total_count ; $b++) { 
+				echo '<a href="javascript: changeimage('.$b.')" class="galleryBullets'.$b.'"><span>Bullet</span></a>';			 			
  				}
  			//}elseif($qwe_dir=='rtl'){
  				//for ($b=8; $b >=1 ; $b--) { 
  				//	echo '<a href="javascript: changeimage('.$b.')" class="galleryBullets'.$b.'"><span>Bullet</span></a>';			 			
  				//}
  			//} 
-
+ 			echo '</p>';	
  			?>
 
 

@@ -16,7 +16,7 @@
 				<div class="qwe-page">
 					<!-- page column width Start -->
 					<div class="qwe-col-xl-12 qwe-col-lg-12 qwe-col-md-12 qwe-col-sm-12">
-  						<?php get_template_part('main-structure/main_index_cat_it'); ?><!--use content-it.php instead -->
+  						<?php get_template_part('page-templates/main_index_cat_it'); ?><!--use content-it.php instead -->
 					</div>
 					<!-- page column width END -->
 				</div>

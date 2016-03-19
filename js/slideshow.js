@@ -182,6 +182,23 @@ $(window).on('scroll', function(){
 
     
 $(window).on('scroll', function(){
+   if (screen.width >= 100) {
+     stop = Math.round($(window).scrollTop());
+         
+        if (stop > 600 & stop <= 1000){
+        $('div.qwe-newsletter').addClass('qwe-float-newsletter-or-gift-show')
+        $('div.qwe-newsletter').removeClass('qwe-float-newsletter-or-gift')
+        }
+        else{
+        $('div.qwe-newsletter').addClass('qwe-float-newsletter-or-gift')
+        $('div.qwe-newsletter').removeClass('qwe-float-newsletter-or-gift-show')
+            
+        }
+} 
+
+});
+    
+$(window).on('scroll', function(){
 
 });
 

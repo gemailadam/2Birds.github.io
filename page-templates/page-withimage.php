@@ -1,3 +1,8 @@
+<?php 
+/*
+Template Name: page with side image
+*/
+?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -11,20 +16,15 @@
 			<?php get_header(); ?>
 		</header>
 
-		<div class="qwe-sticky qwe-col-xl-12 qwe-col-lg-12 qwe-col-md-12 qwe-col-sm-12">
-				<?php get_template_part('plugins/sticky'); ?>
-		</div>
-		
 		<div class="qwe-main">
 			<div class="qwe-row">
 				<div class="qwe-page">
 					<!-- page column width Start -->
 					<div class="qwe-col-xl-12 qwe-col-lg-12 qwe-col-md-12 qwe-col-sm-12">
-  						<?php get_template_part('main-structure/main_page'); ?>
+  						<?php get_template_part('page-templates/main_with_image'); ?>
 					</div>
 					<!-- page column width END -->
 				</div>
-
 			</div>
 		</div>
 		<!-- sidebar Start -->
@@ -32,8 +32,9 @@
 				<?php get_sidebar(); ?>
 		</div>
 		<!-- sidebar END -->
+	
 		<!-- newsletter or gift start-->
-		<div class="qwe-newsletter qwe-float-newsletter-or-gift">
+		<div class="qwe-float-newsletter-or-gift">
 				<?php dynamic_sidebar( 'newsletter' ); ?>
 		</div>
 		<!-- newsletter or gift end-->

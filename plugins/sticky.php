@@ -26,21 +26,29 @@
 					</div>
 
 					<div class="qwe-sticky-description">
-
-						<?php echo '<a href="';echo get_theme_mod($image_indicator_descrription_link[$num],'#');echo '"><p>';echo get_theme_mod($image_indicator_description[$num],'this is a descripion for an article or Portfolio or page you like , this description is just a fast link indicator');echo '</p></a>'; ?>
+						
+						<?php 
+						$description_sticky_qwe = array('','Most Important Information Technology' ,'Time Is Money So , We will save your time','Web Developers Support you 24 7' );
+						echo '<a href="';
+						echo get_theme_mod($image_indicator_descrription_link[$num],'#');echo '"><p>';echo get_theme_mod($image_indicator_description[$num],$description_sticky_qwe[$num]);echo '</p></a>'; ?>
 
 						<br/>
-
-						<?php echo '<a href="';echo get_theme_mod($image_button_caption_indicator_link[$num],'#');echo '"><input type="submit" name="btn_indicator1_qwe" value="';echo get_theme_mod( $image_button_caption_indicator[$num],'button' );echo '"/></a>'; ?>
+						
+						<?php 
+						$button_sticky_qwe=array('','INFORMATION','TIME','DEVELOPMENT');
+						echo '<a href="';
+						echo get_theme_mod($image_button_caption_indicator_link[$num],'#');
+						echo '"><input type="submit" name="btn_indicator1_qwe" value="';
+						echo get_theme_mod( $image_button_caption_indicator[$num],$button_sticky_qwe[$num] );
+						echo '"/></a>'; ?>
 
 					</div>
 				</div>
 				<?php
 				}
 				?>
-			
 				
 
 			</div>
 
-		</section>
+		</section>			
