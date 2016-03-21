@@ -25,5 +25,21 @@ register_sidebar($args);
 add_action('widgets_init','qwe_register_float_newsletter');
 
 
+function register_float_newsletter_plugin_qwe() {
+$args = array('name' =>'newsletter-plugin',
+	'id'=>'newsletter' ,
+	'description'=> 'add wigjet to float newsletter signin',
+	'class'  => '',
+	'before_widget' => '<li id="%1$s" class="widget %2$s">',
+	'after_widget'  => '</li>',
+	'before_title'  => '<h2 class="widgettitle">',
+	'after_title'   => '</h2>' ); 
+
+register_sidebar($args);
+
+}
+
+add_action('widgets_init','register_float_newsletter_plugin_qwe');
+
 
 ?>

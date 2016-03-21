@@ -1,4 +1,3 @@
-  
 
 /* newsletter & gifts & books & sign in */
 
@@ -24,8 +23,18 @@
 .qwe-float-newsletter-or-gift .widgettitle{text-shadow:2px 2px 3px #000;color:#fff;}
 .qwe-float-newsletter-or-gift label{text-shadow:2px 2px 3px #000;color:#fff;}
 .qwe-float-newsletter-or-gift li {padding-left:5%;}
-.qwe-float-newsletter-or-gift div input:last-child {float: left; margin:5px 0 0 1px; box-shadow:2px 2px 3px #000;color:#fff;background-color:#000;}
+.qwe-float-newsletter-or-gift div input:last-child {
+  float: left;
+  margin:5px 0 0 1px; 
+  box-shadow:2px 2px 3px #000;
+  color:#fff;
+  background-color:#000;
+    animation-name: rollIn;
+    animation-duration: 4s;
+}
 
+
+/* for jquery */
 
 .qwe-float-newsletter-or-gift-show ul , .qwe-float-newsletter-or-gift-show li {list-style: none;}
 
@@ -48,4 +57,60 @@
 .qwe-float-newsletter-or-gift-show label{text-shadow:2px 2px 3px #000;color:#fff;}
 .qwe-float-newsletter-or-gift-show li {padding-left:5%;}
 .qwe-float-newsletter-or-gift-show div input:last-child {float: left; margin:5px 0 0 1px; box-shadow:2px 2px 3px #000;color:#fff;background-color:#000;}
+
+
+/**********************/
+/* newsletter 2 plugin*/
+/**********************/
+
+/* newsletter & gifts & books & sign in */
+
+.qwe-float-newsletter-or-gift-plug ul , .qwe-float-newsletter-or-gift-plug li {list-style: none;}
+
+.qwe-float-newsletter-or-gift-plug {
+  position: fixed;
+  right:25%;left:25%;top:25%;bottom:25%; width:50%;
+  background-color:orange;
+  z-index:1;
+    border: 1px solid #666;
+    border-radius: 2%;
+      -moz-box-shadow: inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow: inset 0 0 5px #000000 , 0 9px 5px #000000;
+
+  -webkit-animation-duration:2s;
+  -webkit-animation-name: hinge;
+    animation-name: hinge;
+    animation-duration: 4s;
+}
+
+.qwe-float-newsletter-or-gift-plug:hover {}
+.qwe-float-newsletter-or-gift-plug .widgettitle{text-shadow:2px 2px 3px #000;color:#fff;}
+.qwe-float-newsletter-or-gift-plug label{text-shadow:2px 2px 3px #000;color:#fff;}
+.qwe-float-newsletter-or-gift-plug li {padding-left:5%;}
+.qwe-float-newsletter-or-gift-plug div input:last-child {float: left; margin:5px 0 0 1px; box-shadow:2px 2px 3px #000;color:#fff;background-color:#000;}
+
+/* for jquery */
+
+.qwe-float-newsletter-or-gift-plug-show ul , .qwe-float-newsletter-or-gift-plug-show li {list-style: none;}
+
+.qwe-float-newsletter-or-gift-plug-show {
+  position: fixed;right:0;
+  width:25%;
+  background-color:#000;
+  top:82%;
+  bottom:0%;
+  z-index:1;
+    border: 1px solid #777;
+    border-radius: 2%;
+      -moz-box-shadow: inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow: inset 0 0 5px #000000 , 0 9px 5px #000000;
+
+}
+
+.qwe-float-newsletter-or-gift-plug-show .widgettitle{text-shadow:2px 2px 3px #000;color:#fff;}
+.qwe-float-newsletter-or-gift-plug-show label{text-shadow:2px 2px 3px #000;color:#fff;}
+.qwe-float-newsletter-or-gift-plug-show li {padding-left:5%;}
+.qwe-float-newsletter-or-gift-plug-show div input:last-child {float: left; margin:5px 0 0 1px; box-shadow:2px 2px 3px #000;color:#fff;background-color:#000;}
 

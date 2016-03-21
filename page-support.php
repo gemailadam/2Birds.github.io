@@ -1,3 +1,8 @@
+<?php 
+/*
+ Template Name: no slideshow
+*/
+?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -8,11 +13,11 @@
 	<!-- container column width at all devices Start -->
 	<div class="qwe-contain qwe-col-xl-12 qwe-col-lg-12 qwe-col-md-12 qwe-col-sm-12">
 		<header>
-			<?php get_header(); ?>
+			<?php get_template_part('header-Support'); ?>
 		</header>
 
 		<div class="qwe-sticky qwe-col-xl-12 qwe-col-lg-12 qwe-col-md-12 qwe-col-sm-12">
-				<?php get_template_part('plugins/sticky'); ?>
+				<!--?php get_template_part('plugins/sticky'); ?-->
 		</div>
 		
 		<div class="qwe-main">
@@ -28,17 +33,15 @@
 			</div>
 		</div>
 		<!-- sidebar Start -->
-		<div class="qwe-float-sidebar">
+		<!--div class="qwe-float-sidebar">
 				<?php get_sidebar(); ?>
-		</div>
+		</div-->
 		<!-- sidebar END -->
 		<!-- newsletter or gift start-->
 		<div class="qwe-newsletter qwe-float-newsletter-or-gift">
 				<?php dynamic_sidebar( 'newsletter' ); ?>
 		</div>
 		<!-- newsletter or gift end-->
-
-
 		<footer>
 				<div class="qwe-col-xl-12 qwe-col-lg-12 qwe-col-md-12 qwe-col-sm-12">
 					<?php get_footer(); ?>

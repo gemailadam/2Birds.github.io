@@ -187,11 +187,32 @@ $(window).on('scroll', function(){
          
         if (stop > 600 & stop <= 1000){
         $('div.qwe-newsletter').addClass('qwe-float-newsletter-or-gift-show')
+        $('div.qwe-newsletter').addClass('hinge')
         $('div.qwe-newsletter').removeClass('qwe-float-newsletter-or-gift')
         }
         else{
         $('div.qwe-newsletter').addClass('qwe-float-newsletter-or-gift')
+        $('div.qwe-newsletter').addClass('hinge')
         $('div.qwe-newsletter').removeClass('qwe-float-newsletter-or-gift-show')
+            
+        }
+} 
+
+});
+
+$(window).on('scroll', function(){
+   if (screen.width >= 100) {
+     stop = Math.round($(window).scrollTop());
+         
+        if (stop > 600 & stop <= 1000){
+        $('div.qwe-newsletter-plug').addClass('qwe-float-newsletter-or-gift-plug-show')
+        $('div.qwe-newsletter-plug').addClass('hinge')
+        $('div.qwe-newsletter-plug').removeClass('qwe-float-newsletter-or-gift-plug')
+        }
+        else{
+        $('div.qwe-newsletter-plug').addClass('qwe-float-newsletter-or-gift-plug')
+        $('div.qwe-newsletter-plug').addClass('hinge')
+        $('div.qwe-newsletter-plug').removeClass('qwe-float-newsletter-or-gift-plug-show')
             
         }
 } 
