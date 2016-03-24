@@ -13,7 +13,7 @@
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/css/skeleton-col.css">
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/css/skeleton-row.css">
 
-  <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/animation.min.css">
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/css/animation.css">
 
 <!-- sub style -->
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/css/sub/wordpress.css">

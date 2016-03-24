@@ -1,4 +1,4 @@
-<div class="qwe-index">
+<section class="qwe-index">
 <?php 
 	if (have_posts()) {
 		$oddeven=1;
@@ -69,5 +69,5 @@ echo '<span class="qwe-next-post">';next_posts_link();echo '</span>';
  </div>
 
 
-</div>
+</section>
 <!-- end qwe-index class -->

@@ -1,16 +1,20 @@
 
 /*sidebare*/
 
+.qwe-sidebar {}
 .qwe-sidebar ul , .qwe-sidebar li {list-style: none;}
 
-.qwe-sidebar {display:block;float: left;}
+.qwe-sidebar {margin:0;padding:0;}
+
+.qwe-sidebar li.widget {padding:5%;border-bottom:5px solid #2F6783;}
+
+.qwe-sidebar > div {margin-top: 1%;}
 
 .qwe-float-sidebar ul , .qwe-float-sidebar li {list-style: none;}
 
 .qwe-float-sidebar {
   position: fixed;right:0%;
   width:2%;
-  /*background-color:#7C472D;*/
   background-color:#000;
   top:20%;
   bottom:20%;

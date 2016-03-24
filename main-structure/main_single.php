@@ -1,4 +1,4 @@
-<div class="qwe-single">
+<section class="qwe-single">
 
 <?php 
 if (have_posts()) {
@@ -57,5 +57,5 @@ echo "</div>";
 } //end if
 
 ?>
-</div>
+</section>
 <!-- end qwe-single -->

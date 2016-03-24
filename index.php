@@ -37,7 +37,7 @@
 
 		<!-- newsletter 2 start-->
 		<div class="qwe-newsletter-plug qwe-float-newsletter-or-gift-plug">
-				<?php dynamic_sidebar( 'newsletter-plugin' ); ?>
+				<!--?php dynamic_sidebar( 'newsletter-plugin' ); ?-->
 		</div>
 		<!-- newsletter 2 end-->
 		<footer>

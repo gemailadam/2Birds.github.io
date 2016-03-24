@@ -3,23 +3,59 @@
 
 .qwe-services-page .qwe-post-wrapper {margin-top: 4vw;margin-bottom:4vw; }
 .qwe-services-page .qwe-post-wrapper {margin-left: 20%;width:60%;border:0.1vw solid #999 ;border-radius:1vw;}
-.qwe-services-page .qwe-post-wrapper h1 {margin:5%;}
+.qwe-services-page .qwe-post-wrapper h1 {margin:3%;}
 .qwe-services-page .qwe-post-wrapper h1 a{text-decoration: none;color:#444;}
 .qwe-services-page .contact-form {margin-left:5%;}
-.contact-form div:nth-child(1) {margin-bottom:2%;}
-.contact-form div:nth-child(2) {margin-bottom:2%;}
-.contact-form div:nth-child(3) {margin-bottom:2%;}
-.contact-form div:nth-child(7) {margin-bottom:2%;}
-.contact-form div:nth-child(8) {margin-bottom:2%;}
-.contact-form div:nth-child(9) {margin-bottom:2%;}
-.contact-form div:nth-child(10) {margin-bottom:2%;}
-.contact-form div:nth-child(11) {margin-bottom:2%;}
-.contact-form div:nth-child(12) {margin-bottom:2%;}
 
-.qwe-services-page .contact-form div:nth-child(1) ,.contact-form div:nth-child(5) ,
+.separator-qwe {}
+.separator-qwe label {color:#043951;}
+.separator-qwe input ,.separator-qwe select {
+	border: 0.1vw solid #777;
+	box-shadow:inset 1px 1px 3px #000;
+	border-radius: 0.5vw;
+	height:3vw;
+}
+.separator-qwe br {float: left;}
+.contact-submit input {width:30%;margin:2% 1%;}
+
+.name-qwe div label ,.name-qwe div input {width:100%;}
+.name-qwe div {width:50%;float: left;display: inline-block;} 
+
+
+.datebirth-qwe div label ,.datebirth-qwe div select {width:90%;}
+.datebirth-qwe div {width:25%;float: left;display: inline-block;} 
+
+.emailweb-qwe div label ,.emailweb-qwe div label {width:100%;}
+.emailweb-qwe div {width:50%;float: left;display: inline-block;} 
+
+.skills-qwe div label ,.skills-qwe div label {width:100%;}
+.skills-qwe div {width:25%;float: left;display: inline-block;} 
+
+.skills-qwe div:last-child {width:50%;float: left;display: inline-block;} 
+
+.mobile-qwe div label ,.mobile-qwe div label {width:100%;}
+.mobile-qwe div {width:50%;float: left;display: inline-block;} 
+
+.available-qwe div label  ,.available-qwe div select  {width:70%;}
+.available-qwe div {width:50%;float: left;display: inline-block;} 
+
+.availableweek-qwe label {display: inline-block;}
+.availableweek-qwe div label ,.availableweek-qwe div input {width:100%;}
+.availableweek-qwe div {width:10%;float: left;display: inline-block;} 
+
+.agreement-qwe a , .agreement-qwe div {display: inline-block;}
+
+/* .separator-qwe textarea {
+	border: 0.1vw solid #777;
+	box-shadow:inset 1px 1px 3px #000;
+	border-radius: 0.5vw;height:3vw;
+} */
+/* .datebirth-qwe div {display: inline-block;} */
+/* .emailweb-qwe div{display: inline-block;} */
+/* .qwe-services-page .contact-form div:nth-child(1) ,.contact-form div:nth-child(5) ,
 .qwe-services-page .contact-form div:nth-child(6) ,.contact-form div:nth-child(11) ,
 .contact-form div:nth-child(11) ,.contact-form div:nth-child(13) , .contact-form div:nth-child(15) {float: left;}
-.qwe-services-page .contact-form div:nth-child(1)  ,.contact-form div:nth-child(2) {width:48%;float: left;}
+.qwe-services-page .contact-form div:nth-child(1)  ,.contact-form div:nth-child(2) {margin-right:6%; float: left;}
 .qwe-services-page .contact-form div label {color:#043951;}
 .qwe-services-page .contact-form div label span {color:#f00;box-shadow:inset 1px 1px 3px #000;}
 .qwe-services-page .contact-form div:nth-child(4) select {display: none;}
@@ -36,7 +72,5 @@
 .qwe-services-page .contact-form div:nth-child(12) input {}
 .qwe-services-page .contact-form div:nth-child(13) label {margin-right:40%;}
 
-.qwe-services-page .contact-form p input {width:90%;}
-
-
-
+.qwe-services-page .contact-form p input {width:90%;margin-bottom:4vw;}
+ */
