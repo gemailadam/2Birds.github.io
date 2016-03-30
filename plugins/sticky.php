@@ -28,7 +28,7 @@
 					<div class="qwe-sticky-description">
 						
 						<?php 
-						$description_sticky_qwe = array('','Most Important Information Technology' ,'Time Is Money So , We will save your time','Web Developers Support you 24 7' );
+						$description_sticky_qwe = array('','Most Important Information Technology' ,'Time Is Important , We will Save Your Time','Web Developers Support You 24 7' );
 						echo '<a href="';
 						echo get_theme_mod($image_indicator_descrription_link[$num],'#');echo '"><p>';echo get_theme_mod($image_indicator_description[$num],$description_sticky_qwe[$num]);echo '</p></a>'; ?>
 

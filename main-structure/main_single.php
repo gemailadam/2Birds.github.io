@@ -2,7 +2,7 @@
 
 <?php 
 if (have_posts()) {
-// while (have_posts()) {
+while (have_posts()) {
 the_post();
 echo '<div id="post-';the_ID();echo '"';post_class();echo '>';
 
@@ -52,10 +52,12 @@ the_content();
 <?php
 
 echo '</div>';
-echo "</div>";
+echo '</div>';
 
+} //end while
 } //end if
 
 ?>
 </section>
 <!-- end qwe-single -->
+

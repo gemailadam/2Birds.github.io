@@ -1,5 +1,67 @@
 /* ooopppsss */
-.oops h1 {color:<?php echo get_theme_mod('404_qwe','#D94E3B;'); ?>;}
+.oops  {}
+.oops p {
+	color:#222;
+	font-size:3vw;
+	padding:5%;
+	background-color:#fff;
+    text-shadow:0.2vw 0.2vw 1vw #000;
+}
+
+
+/* youtube */
+.youtube-qwe {
+	/* background-color:#e3e3e3; */
+	background-color:#000;
+	border:0.2vw solid #cbcbcb;
+	padding:1% 2%;
+	text-align: center;
+	vertical-align:middle;
+}
+.youtube-qwe h3{color:#fff;}
+
+
+.gray-square-1-qwe {
+	background-color:#e3e3e3;
+	border:0.2vw solid #cbcbcb;
+	padding:1% 2%;
+	margin-top:2vw;
+	margin-bottom:2vw;
+	text-align: center;
+	vertical-align:middle;	
+}
+
+
+.gray-square-2-qwe {
+	background-color:#e3e3e3;
+	border:0.2vw solid #cbcbcb;
+	padding:1% 2%;
+	margin-top:2vw;
+	margin-bottom:2vw;
+	text-align: left;
+	vertical-align:middle;
+	border-radius:0.5vw;
+	/* line-height:1vw; */
+}
+/* .gray-square-2-qwe:before {margin-top:3vw;content:"";clear: both;}
+.gray-square-2-qwe:after {margin-bottom:3vw;content:"";clear: both;}
+ */
+.gray-square-3-qwe {
+	background-color:#e3e3e3;
+	border:0.2vw solid #cbcbcb;
+	padding:1% 2%;
+	margin-top:2vw;
+	margin-bottom:2vw;
+	text-align: right;
+	vertical-align:middle;	
+}
+
+.qwe-paragraph {margin-top:3vw;margin-bottom:3vw;}
+.qwe-paragraph:first-letter{font-size: 10em;color:red; float: left;} 
+
+.qwe-paragraph p {font-size:1.5vw;}
+.qwe-paragraph h2 {font-size:2vw;font-weight:bold;}
+.qwe-paragraph h3 {font-size:1.7vw;font-weight:bold;}
 
 /* Test WordPress Modify and Fix */
 .page .rect img {max-width:100%;height:auto;overflow: auto;}

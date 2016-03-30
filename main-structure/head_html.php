@@ -26,7 +26,9 @@
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/css/sub/services.css">
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/css/sub/sidebar.css">
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/css/sub/footer.css">
-<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/css/sub/newsletter.css">
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/css/sub/z-others.css">
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/css/sub/wiki.css">
+
 
 <!-- font -->
 <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>

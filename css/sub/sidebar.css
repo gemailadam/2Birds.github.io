@@ -1,7 +1,7 @@
 
 /*sidebare*/
 
-.qwe-sidebar {}
+.qwe-sidebar {margin-top:1%;}
 .qwe-sidebar ul , .qwe-sidebar li {list-style: none;}
 
 .qwe-sidebar {margin:0;padding:0;}

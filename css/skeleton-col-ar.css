@@ -11,7 +11,7 @@
 .qwe-col-md-9, .qwe-col-md-10, .qwe-col-md-11, .qwe-col-md-12,
 .qwe-col-sm-1, .qwe-col-sm-2, .qwe-col-sm-3, .qwe-col-sm-4, .qwe-col-sm-5, .qwe-col-sm-6, .qwe-col-sm-7, .qwe-col-sm-8,
 .qwe-col-sm-9, .qwe-col-sm-10, .qwe-col-sm-11, .qwe-col-sm-12
-{float: left;/* display:block;margin:0;padding:0; */}
+{float: right;/* display:block;margin:0;padding:0; */}
 
 @media (min-width:1916px ) and (max-width:1920px ) {
 .qwe-container {width:1900px;}

@@ -21,7 +21,9 @@
 			echo '<div class="qwe-left-part qwe-col-xl-6 qwe-col-lg-12 qwe-col-md-12 qwe-col-sm-12">';				
 			echo '<div class="qwe-article">';				
 				echo '<h1 class="qwe-page-title"><a href="';the_permalink();echo '">';the_title();echo '</a></h1>';
-				the_content();
+				
+				// the_content();
+				the_excerpt();
 				
 			echo '</div>';
 			echo '</div>';
@@ -35,7 +37,10 @@
 			echo '<div class="qwe-right-part qwe-article qwe-col-xl-6 qwe-col-lg-12 qwe-col-md-12 qwe-col-sm-12">';				
 			echo '<div class="qwe-article">';
 				echo '<h1 class="qwe-page-title"><a href="';the_permalink();echo '">';the_title();echo '</a></h1>';
-				the_content();
+				
+				// the_content();
+				the_excerpt();
+
 			echo '</div>';
 			echo '</div>';
 			}

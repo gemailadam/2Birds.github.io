@@ -1,82 +1,33 @@
 
 /*header*/
-.qwe-header {}
-.qwe-site-title p {padding-left:25%; width:50%;padding-top:2%;line-height:8vw;text-align: center;vertical-align:middle;}/*fix */
-.qwe-site-title a {background-color: transparent;text-decoration: none;display: block;color:#fff;}
-.qwe-site-title a {font-size: 4vw;text-shadow:2px 2px 3px #000;}
-.qwe-site-title a:nth-child(2) {font-size: 3vw;}
-/* .qwe-site-title a button {font-size: 6vw;background-color: transparent;}
-.qwe-site-title a button {text-shadow:2px 2px 3px #000;box-shadow:2px 2px 8px #000;}
-.qwe-site-title a button {color:#fff;border: 1px solid #777; border-radius:10%;} */
 
-/* h */
-/* .qwe-site-title p {width:45%;padding-top:2%;line-height:8vw;}
+.qwe-header {background:#2F6783;}
+
+.qwe-site-title p {width:45%;padding-top:2%;line-height:8vw;}
+.qwe-site-title p:first-letter{color:red;}
 .qwe-site-title a {background-color: transparent;text-decoration: none;display: block;color:#fff;}
 .qwe-site-title a {font-size: 4vw;text-shadow:2px 2px 3px #000;text-align: center;vertical-align:middle;}
 .qwe-site-title a:nth-child(2) {font-size: 3vw;}
 .qwe-site-title a button {font-size: 6vw;background-color: transparent;}
 .qwe-site-title a button {text-shadow:2px 2px 3px #000;box-shadow:2px 2px 8px #000;}
 .qwe-site-title a button {color:#fff;border: 1px solid #777; border-radius:10%;}
- */
 
 /* slideshow or banner */
-
-/* Images description */
-
-.gallerydescription > div {
-    display: none;
-    width: 100%;
-}
-
-.gallerydescription div p {
-  padding-left:25%;
-  width:50%;
-  padding-top:2%;
-  line-height:8vw;
-  text-align: center;
-}
-
-.gallerydescription > div a {
-  color: #fff;
-  text-decoration:none;
-  text-shadow:2px 2px 3px #000;
-  padding:1% 1%;
-  margin-top:1%;
-  font-size: 2vw;/*fix bug text changed at header*/
-}
-
-.gallerydescription .description1 {display: block;}
-
-.gallerydescription .desbg{background-color:rgba(0, 0, 0, 0);/* padding:1% 0; */}
-
-.gallerydescription > div input {
-    margin-right: 5%;
-    margin-left: 5%;
-    margin-top:1%;
-    border-radius: 0.5vw;
-    width:15vw;
-    border:0.1vw solid #fff;
-    background-color:transparent;
-    color: #fff;
-    font-size: 3vw;
-    box-shadow: 0 0 0 #000;
-    text-shadow:2px 2px 3px #000;box-shadow:2px 2px 8px #000;
-}
-
-.gallerydescription > div input:hover {
-    box-shadow: 2px 2px 4px #000;
-
-}
-
-
-
-
 .galleryPreviewImage {position: relative;z-index:-1;}
 .galleryPreviewImage img {width: 100%;position: absolute;}
 
 
 .galleryPreviewContainer {
     position: relative;
+ 
+  animation-duration:3s;
+  animation-name:slideInLeft;
+  animation-delay:1s;
+  animation-iteration-count:1;
+  -webkit-animation-direction: normal;
+  -o-animation-direction: normal;
+  animation-direction: normal;
+
 }
 
 
@@ -84,11 +35,11 @@
     display: none;
     position: absolute;/* new change - prev > position: relative;*/
     top:0;
-
 }
 
 .galleryPreviewImage img.previewImage1 {
     display: block;
+
 }
 
 img#btn { width:12%;margin:10px 5%;position:absolute;left:75%;top:460px;}
@@ -136,6 +87,45 @@ img#logo {
 .galleryPreviewarrow a:hover {
     background-color: #000;
     /*margin-top: -40px;*/
+}
+
+.gallerydescription > div {
+    display: none;
+    width: 100%;
+}
+
+.gallerydescription > div a {
+  color: #fff;
+  text-decoration:none;
+  text-shadow:2px 2px 3px #000;
+  padding:1% 1%;
+  margin-top:1%;
+  font-size: 2vw;/*fix bug text changed at header*/
+}
+.gallerydescription > div p {
+  text-align: center;vertical-align:middle;width:45%;
+}
+.gallerydescription .description1 {display: block;}
+
+.gallerydescription .desbg{background-color:rgba(0, 0, 0, 0);/* padding:1% 0; */}
+
+.gallerydescription > div input {
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top:1%;
+    border-radius: 0.5vw;
+    width:15vw;
+    border:0.1vw solid #fff;
+    background-color:transparent;
+    color: #fff;
+    font-size: 3vw;
+    box-shadow: 0 0 0 #000;
+    text-shadow:2px 2px 3px #000;box-shadow:2px 2px 8px #000;
+}
+
+.gallerydescription > div input:hover {
+    box-shadow: 2px 2px 4px #000;
+
 }
 
 

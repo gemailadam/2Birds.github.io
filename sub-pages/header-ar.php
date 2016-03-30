@@ -1,3 +1,12 @@
+ <!-- translators and translation agencies  -->
+<div class="qwe-header qwe-row-xl-7 qwe-row-lg-7 qwe-row-md-7 qwe-row-sm-7" >
+<!-- <div class="qwe-prcentage-height" > -->
+	<div class="qwe-nav" >
+		<?php wp_nav_menu(array('theme_location'=>'header-ar')); ?>
+	</div>
+	<!--div class="qwe-header-img">
+		<img src="<?php echo get_template_directory_uri(); ?>/images/light-love-clouds-river.jpg" alt="">
+	</div-->
 
 <section class="qwe-slideshow" >
 

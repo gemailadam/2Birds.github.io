@@ -29,8 +29,8 @@
   box-shadow:2px 2px 3px #000;
   color:#fff;
   background-color:#000;
-    animation-name: rollIn;
-    animation-duration: 4s;
+/*     animation-name: rollIn;
+    animation-duration: 4s; */
 }
 
 
@@ -68,7 +68,7 @@
 .qwe-float-newsletter-or-gift-plug ul , .qwe-float-newsletter-or-gift-plug li {list-style: none;}
 
 .qwe-float-newsletter-or-gift-plug {
-  position: fixed;
+/*   position: fixed;
   right:25%;left:25%;top:25%;bottom:25%; width:50%;
   background-color:orange;
   z-index:1;
@@ -81,7 +81,7 @@
   -webkit-animation-duration:7s;
   -webkit-animation-name: hinge;
   animation-duration:7s;
-  animation-name: hinge;
+  animation-name: hinge; */
 
 }
 

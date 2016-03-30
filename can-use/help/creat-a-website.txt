@@ -1,0 +1,158 @@
+
+How To Create a Website , How To Create a WordPress [¹] Template ?
+
+
+
+This is an article about Create a Website Templatewordpress create a website (theme) and use it with WordPress Content Management System (CMS) , WordPress Theme ( or Template ) is the Front End ( i.e skin and layout for any website ) , WordPress Themes can help you to make a professional blog , magazine , store Website ( using the woocommerce plugin ) , Thats not all , WordPress give you the ability to use a lot of free plugins , a lot of themes are available for free , you can found incredible themes with a lot of features , you can use search engine optmization (SEO) plugin made by yoast to make a good rank for your website (i.e How to make your website from the Top 10 sites on Google search engine , bing , Yandex , alex and others , our theme project will contain a lot of features like , Full width pages , two column pages with left sidebar or right sidebar , custom posts , pages with and without slideshow , pages with custom sticky indicators , pages with top navbar , pages and post with one or two or three footer widget areas , pages with right to left languages like arabic , custom colors , custom layout , woocommerce support , translation ready , responsive layout , a lot post formats support , feature images .
+
+
+
+Contents
+
+    1 Overview
+        1.1 WordPress
+        1.2 Themes
+        1.3 Plugins
+        1.4 Widget
+        1.5 Tools & Requirements
+        1.6 Other features
+    2 Structure
+
+
+Overview
+1.1 WordPress
+
+( The original article Wikipedia )
+
+WordPress is a free and open-source content management system (CMS) based on PHP and MySQL.[2] WordPress is installed on a web server, which either is part of an Internet hosting service or is a network host itself; the first case may be on a service like WordPress.com, for example, and the second case is a computer running the software package WordPress.org.[3] An example of the second case is a local computer configured to act as its own web server hosting Wordpress for single-user testing or learning purposes. Features include a plugin architecture and a template system. WordPress was used by more than 23.3% of the top 10 million websites as of January 2015.[4] WordPress is the most popular blogging system in use on the Web,[5] at more than 60 million websites.[6]It was released on May 27, 2003, by its founders, Matt Mullenweg[7] and Mike Little,[18] as a fork of b2/cafelog. The license under which WordPress software is released is the GPLv2 (or later) from the Free Software
+1.2 Themes
+
+( The original article Wikipedia )
+
+WordPress users may install and switch between themes. Themes allow users to change the look and functionality of a WordPress website and they can be installed without altering the content or health of the site. Every WordPress website requires at least one theme to be present and every theme should be designed using WordPress standards with structured PHP, valid HTML and Cascading Style Sheets (CSS). Themes may be directly installed using the WordPress "Appearance" administration tool in the dashboard or theme folders may be uploaded via FTP.[8] The PHP, HTML (HyperText Markup Language) and CSS code found in themes can be added to or edited for providing advanced features. WordPress themes are in general classified into two categories, free themes and premium themes. All the free themes are listed in the WordPress theme directory and premium themes should be purchased from marketplaces and individual WordPress developers. WordPress users may also create and develop their own custom themes if they have the knowledge and skill to do so. If WordPress users do not have themes development knowledge then they may download and use free WordPress themes from wordpress.org.
+1.3 Plugins
+
+( The original article Wikipedia )
+
+WordPress's plugin architecture allows users to extend the features and functionality of a website or blog. WordPress has over 40,501 plugins available,[9] each of which offers custom functions and features enabling users to tailor their sites to their specific needs. These customizations range from search engine optimization, to client portals used to display private information to logged in users, to content management systems,[10] to content displaying features, such as the addition of widgets and navigation bars. But not all available plugins are always abreast with the upgrades and as a result they may not function properly or may not function at all.[11]
+1.4 Widget
+
+( The original article Wikipedia )
+
+A widget (also graphical control element or control) is an element of interaction in a graphical user interface (GUI), such as a button or a scroll bar. Controls are software components that a computer user interacts with through direct manipulation to read or edit information about an application. User interface libraries, such as e.g. GTK+ or Cocoa, contain a collection of widgets and the logic to render these.[12]
+1.5 Tools & Requirments
+
+Sublime Editor , xampp ( localhost ) , Image Editor ( e.g Photoshop , GIMP ) , Other Programs Like Filezilla ( Uploader ) , Notepad ++
+1.6 Other Features
+Structure
+
+To Create a Website open your editor , I always use sublime editor , Then make your most important file index.php (our master php file) , Then save it to a special folder ( e.g 2birds folder ) , then start writing the following codes
+
+[squares i="2"]
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title></title>
+
+<head>
+<body>
+
+</body>
+
+</html>
+
+[squaree]
+
+add your folder project to sublime , Then add some important sub folders to the parent folder ( 2Birds ) , like css folder for your stylesheets , js for your javascript codes , images for your linked images , languages for your translated languages , functions (or include) for your functions , we will use those functions to control the most important parts of our theme , Later we will add some folders like page-templates Folder ( To make some important Templates files ) , main-structur Folder ( for our structure files ) , sub-pages Folder ( For Some Common Codes  ) .
+
+add yor first meta tag viewport , it is very important for zooming and rescalling Our Website at all devices ( spechially mobiles ) , add viewport and device-width , initial-scall=1 ( like following )
+[squares i="2"]
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+[squares i="2"]
+<meta name="viewport" content="width=device-width,initial-scall=1">
+
+[squaree]
+
+   <title></title>
+
+<head>
+
+<body>
+
+</body>
+
+</html>
+
+[squaree]
+next add meta tag ( http-equiv ) ,this meta tag used for Internet explorer (IE) compatability modes , this meta used to force IE to use the latest mode ( called edge ) , this meta tag don't let IE to decide the mode and force it to use edge mode
+
+[squares i="2"]
+<meta http-equiv="X-UA-compatible" content="IE=edge">
+[squaree]
+
+Then add meta for character set , character set [ charset ] used to define any language characters , for example english has 26 characters , other languges has more , so we use charset to define more characters , UTF-8 is the most famus character sets .
+
+we will use our first wordpress php function bloginfo('charset') , this function get what wordpress regular user add [ his language or his prefered lang ] at wordpress admin panel settings > general
+
+next , add code to make your website work correctly at IE 6 , 7 and 8 , because old IE browsers dosen't support html5 and CSS3 codes
+
+oops , un formatted snippet , I will fix that
+
+we will make our 2nd function get_template_directory_uri()
+
+this function will be used to get the path to your javascript files folder [ js ] , those files that we will download and save to our folder js later
+
+get_template_directory_uri() with echo will print the path to the root directory of your work [ i.e 2birds ] , then add /js/html5shiv.min.js , to get the file
+
+To get this file refere to the link under this video , this link for all 2bird project theme materials
+
+make the same step for respond.min.js file
+
+min mean minify , minify is a technique used to minimize js files and also css and php and other files to make your website load very fast
+
+4th function is wp_title( ) , used to get the title of the blog or your website , title also aigned by user from admin [ back end ] panel Settigs > General
+
+title appear at browser tab !
+
+then we will add 2 links for our style sheets
+
+first style sheet is essential for wordpress [ style.css ] , use bloginfo function and pass the parameter stylesheet_url
+
+all wordpress function has reference and description at codex.wordpress.org , just go there and type the function name at search box , or google it
+
+shift+ctrl+d at sublime editor will duplicat the line
+
+sublime editor has a lot of features and plugins that you can't count , i love wordpress and sublime
+
+for the secand style sheet use get_template_directory_uri ( ) function
+
+/css/skeleton.css to compleat the path for our css file [ this file is the skeleton for our website]
+
+you can use bootstrap css file , but I use my skeleton
+
+min for minify as we said before
+
+last and not least , the most important function for wordpress plugins , widgets and your codes , wp_head ( )
+
+wp_head( ) function pass a lot of things like styles and scripts , any one make plugins love this function and wp_footer ( ) function
+
+if you like this video don't forget to subscribe , like and share
+
+
+Create WordPress Theme From Scratch Part 1 [ Structure ]
+
+
+[youtube src="https://www.youtube.com/embed/rHnl29Vn80k" title="WordPress Theme 2Birds Part 2"]
+Refrences
+
+¹ WordPress is a free and open-source content management system (CMS) based on PHP and MySQL. WordPress is installed on a web server, which either is part of an Internet hosting service or is a network host itself. Wikipedia WordPress

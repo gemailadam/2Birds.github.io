@@ -22,6 +22,30 @@ if ( ! isset( $content_width ) ) {
  
         wp_link_pages( $defaults_2 );
 
+
+
+/* nav arabic */
+
+function qwe_register_nav_ar_menu(){
+
+    $location='header-ar';
+    $description='Primary menu ar';
+    register_nav_menu( $location, $description );
+
+}
+add_action('after_setup_theme','qwe_register_nav_ar_menu' );
+
+
+function qwe_register_nav_menu(){
+
+    $location='header';
+    $description='Primary menu En';
+    register_nav_menu( $location, $description );
+
+}
+add_action('after_setup_theme','qwe_register_nav_menu' );
+
+
 /* register widgets for sidebare*/
 
 /////////////////////////////////////////////

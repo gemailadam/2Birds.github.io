@@ -1,5 +1,14 @@
+</html>
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<!--[if IE 7]>
+<html class="ie ie7" <?php language_attributes(); ?>>
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" <?php language_attributes(); ?>>
+<![endif]-->
+<!--[if !(IE 7) & !(IE 8)]><!-->
+<html <?php language_attributes(); ?> >
+<!--<![endif]-->
 <head>
   <?php get_template_part('main-structure/head_html'); ?>
 </head>
@@ -7,10 +16,9 @@
 <div class="qwe-container">
 	<!-- container column width at all devices Start -->
 	<div class="qwe-contain qwe-col-xl-12 qwe-col-lg-12 qwe-col-md-12 qwe-col-sm-12">
-		<header>
+		<header class="qwe-col-xl-12 qwe-col-lg-12 qwe-col-md-12 qwe-col-sm-12">
 			<?php get_header(); ?>
 		</header>
-
 		<div class="qwe-main">
 			<div class="qwe-row">
 				<div class="qwe-page">
