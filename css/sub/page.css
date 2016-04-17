@@ -17,6 +17,7 @@
 
 .qwe-post-wrapper h1:first-letter {font-size: 1.5em;color:red;} 
 
+.qwe-post-wrapper {} 
 
 @media (max-width: 960px){
 
@@ -44,8 +45,11 @@
 .qwe-post-wrapper {border-top:1px solid #000;}
 .qwe-post-wrapper .qwe-page-title{padding:1% 0%;}
 .qwe-post-wrapper .qwe-page-body{padding:1% 0%;}
-.qwe-single .qwe-post-wrapper {padding:3% 3%;}
-.qwe-page-class .qwe-post-wrapper {padding:3% 3%;}
+.qwe-single .type-post{padding:1% 1%;}
+.qwe-single .qwe-post-wrapper {padding:3% 5%;border:0.1vw solid #000; border-radius: 0.5vw; }
+.qwe-page-class .type-page{padding:1% 1%;}
+.qwe-page-class .qwe-post-wrapper {padding:3% 5%;border:0.1vw solid #000; border-radius: 0.5vw;}
+.qwe-first:first-letter{font-size: 12em;color: red;float: left;margin: 0;padding: 0; }
 
 
 /* post single */
@@ -54,11 +58,26 @@
 .postedby ul {display: inline-block;color:#043951;}
 .postedby li {display: inline-block;color:#043951;list-style: none;}
 
-.qwe-next-prev-post {width:100%;background-color:#000;margin:2% 0;}
-.qwe-next-prev-post {width:100%;background-color:#000;padding:1% 0;}
+.qwe-next-prev-post {width:100%;background-color:#000;margin:1% 0;}
+.qwe-next-prev-post {width:100%;background-color:#000;padding:2% 0;}
 .qwe-next-post {float: right;}
 .qwe-next-post a {color:#fff;}
 .qwe-prev-post a {color:#fff;}
+
+.qwe-comments {padding-bottom: 1vw;}
+
+
+.qwe-article .read-more {
+  background-color: #000;
+  text-decoration: none;
+  color:#fff;
+  display: block;
+  margin: 1% 15%;
+  padding: 1% 25%;
+  font-weight: bold;
+  box-shadow:0.1vw 0.1vw 1vw #000;
+}
+
 
 .cd-fixed-bg {
   min-height: 100%;

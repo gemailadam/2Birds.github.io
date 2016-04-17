@@ -18,6 +18,12 @@ if (have_posts()) {
 		echo "</div>";
 	}
 }
+
+		echo '<div class="qwe-newsletter-social">';
+		dynamic_sidebar( 'newsletter-social' );
+		echo '</div>';
+	
 ?>
+
 </section>
 <!-- end qwe-page-class -->

@@ -45,7 +45,6 @@ function qwe_register_nav_menu(){
 }
 add_action('after_setup_theme','qwe_register_nav_menu' );
 
-
 /* register widgets for sidebare*/
 
 /////////////////////////////////////////////
@@ -127,5 +126,22 @@ register_sidebar($args);
 
 add_action('widgets_init','register_float_newsletter_plugin_qwe');
 
+
+
+function register_newsletter_social_qwe() {
+$args = array('name' =>'newsletter-social',
+	'id'=>'newsletter-social' ,
+	'description'=> 'add wigjet newsletter signin and social',
+	'class'  => '',
+	'before_widget' => '<li id="%1$s" class="widget %2$s">',
+	'after_widget'  => '</li>',
+	'before_title'  => '<h2 class="widgettitle">',
+	'after_title'   => '</h2>' ); 
+
+register_sidebar($args);
+
+}
+
+add_action('widgets_init','register_newsletter_social_qwe');
 
 ?>

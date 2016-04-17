@@ -3,6 +3,7 @@ require_once ('includes/customize.php');
 require_once ('includes/modules.php');
 require_once ('includes/essential.php');
 require_once ('includes/shortcode.php');
+require_once ('includes/inspire-functions.php');
 
 // register navigation menus
 function register_nav_menu_qwe(){

@@ -1,4 +1,15 @@
-
+</html>
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" <?php language_attributes(); ?>>
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" <?php language_attributes(); ?>>
+<![endif]-->
+<!--[if !(IE 7) & !(IE 8)]><!-->
+<html <?php language_attributes(); ?> >
+<!--<![endif]-->
+<head>
 <meta name="viewport" content="width=device-width,initial-scall=1">
 <!-- <meta content='width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;' name='viewport' /> -->
 <meta http-equiv="X-UA-compatible" content="IE=edge">
@@ -10,7 +21,7 @@
 <title><?php wp_title(''); ?></title>
 
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?> ">
-<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/css/skeleton-col-ar.css">
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/css/skeleton-col.css">
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/css/skeleton-row.css">
 
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/css/animation.css">
@@ -35,3 +46,14 @@
 <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
 
 <?php wp_head(); ?>
+</head>
+
+<!--?php
+if ( is_home() ) :
+	get_header( 'home' );
+elseif ( is_404() ) :
+	get_header( '404' );
+else :
+	get_header();
+endif;
+?-->

@@ -54,9 +54,14 @@ echo '<span class="qwe-next-post">';next_posts_link();echo '</span>';
 
 		}
 	}
+		echo '<div class="qwe-newsletter-social">';
+		dynamic_sidebar( 'newsletter-social' );
+		echo '</div>';
+	
 
 
 ?>
+
 <span class="qwe-prev-post">
 	 <?php previous_posts_link(); ?> 
 </span>

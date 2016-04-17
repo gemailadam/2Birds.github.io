@@ -1,0 +1,40 @@
+/***************************************/
+/*******   qwe-newsletter-social  ******/
+/***************************************/
+.qwe-newsletter-social {position: relative;}
+.qwe-newsletter-social ul, .qwe-newsletter-social li {list-style: none;}
+.qwe-newsletter-social li.widget {float: left;padding:1%;}
+.qwe-newsletter-social li.widget:first-child { clear: left;}
+.qwe-newsletter-social li.widget:last-child { clear: right;}
+/*.qwe-newsletter-social li > ul > li {float:none;}*/
+
+.qwe-newsletter-social {background-color:#fff;box-shadow:2px 2px 5px #000;padding-left:71%;padding-right: 0%;width: 36%;}
+.qwe-newsletter-social li {margin-bottom: 1%;}
+
+.benchmarkemaillite_widget{background-color: #fff;color:#000;box-shadow:2px 2px 5px #000;border-radius: 0.5vw;
+
+/*    animation-name: bounceIn;
+    animation-duration: 4s; */
+
+    }
+.qwe-newsletter-social li:before{color:red;float: right;/*content: "X";*/}
+.qwe-newsletter-social li:focus:before{display: none;}
+
+.benchmarkemaillite_widget input{
+	background-color:#cbcbcb;
+	padding-left: 5px;
+	color:#222;
+	border-radius: 0.5vw;
+	width:25vw;
+	height: 3vw;
+	margin:1vw 1vw; 
+}
+
+.benchmarkemaillite_widget input:last-child{
+	background-color: #CB2027;
+	color:#fff;
+	animation-name: shake;
+	animation-duration: 2s;
+	animation-delay: 2s;
+	animation-iteration-count: infinite;
+	 }

@@ -32,8 +32,9 @@ echo '</div>';
 echo '<!-- END post by class -->';
 
 the_content();
-?>
 
+
+?>	
 <div class="qwe-next-prev-post">
 	<span class="qwe-prev-post">
 		<?php previous_post_link(); ?>
@@ -43,8 +44,15 @@ the_content();
 	</span>  
 </div>
 
-<div class=" col-xs-9 col-lg-9 col-md-12 col-sm-12 col-vs-12">
-	<div class="qwe-comments">
+<?php 
+		echo '<div class="qwe-newsletter-social">';
+		dynamic_sidebar( 'newsletter-social' );
+		echo '</div>';
+?>
+
+
+<div class="qwe-comments qwe-col-xl-8 qwe-col-lg-8 qwe-col-md-8 qwe-col-sm-8">
+	<div class="">
  		<?php comments_template( $file, $separate_comments ); ?>
  	</div>
 </div>

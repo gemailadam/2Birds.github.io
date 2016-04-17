@@ -206,4 +206,39 @@ add_action('init','register_squaree_shortcode');
 /* squareeeeee shortcode callback function    END */ 
 /************************************/
 
+
+
+
+/************************************/ 
+/* squares shortcode callback function    START */ 
+/************************************/ 
+
+// function squares_callback_shortcode_qwe($atts)
+function social_callback_shortcode_qwe()
+{
+
+?>
+<div class="qwe-newsletter-social qwe-col-xl-11 qwe-col-lg-11 qwe-col-md-11 qwe-col-sm-11">
+<?php dynamic_sidebar( 'newsletter-social' ); ?>
+</div>
+<?php
+
+}
+
+function register_social_shortcode()
+{
+   // add_shortcode( $tag, $func );
+   add_shortcode( 'social', 'social_callback_shortcode_qwe');
+}
+
+add_action('init','register_social_shortcode');
+
+
+/************************************/ 
+/* squares shortcode callback function    END */ 
+/************************************/
+
+
+
+
 ?>
