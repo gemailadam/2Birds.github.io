@@ -1,3 +1,4 @@
+</div>
 <footer>
 <div class="qwe-col-xl-12 qwe-col-lg-12 qwe-col-md-12 qwe-col-sm-12">
 

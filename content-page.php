@@ -25,12 +25,21 @@ if (have_posts()) {
 		echo "</div>";
 	}
 }
-
-		echo '<div class="qwe-newsletter-social">';
-		dynamic_sidebar( 'newsletter-social' );
-		echo '</div>';
-	
 ?>
+<!-- sidebar Start -->
+<div class="qwe-float-sidebar">
+	<h3>archive</h3>
+	<?php get_sidebar(); ?>
+</div>
+<!-- sidebar END -->
+
+<!-- newsletter or gift start-->
+<div class="qwe-newsletter-social">
+	<?php dynamic_sidebar( 'newsletter-social' ); ?>
+</div>
+<!-- newsletter or gift end-->
+
+
 
 </section>
 <!-- end qwe-page-class -->

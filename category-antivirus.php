@@ -131,11 +131,18 @@ $my_date = the_date('', '', '', FALSE); echo $my_date;
 
 echo '</a>';
 
+// echo '<a class="author-zxc" href="';
+// the_author_link();
+// echo '">author: ';
+// the_author();
+// echo '</a>';
+
 echo '<a class="author-zxc" href="';
-the_author_link();
-echo '">author: ';
-the_author();
+echo '">By: ';
+the_author_posts_link(); 
 echo '</a>';
+
+
 // echo '<a class="category-zxc">';
 // the_category_link();
 the_category();

@@ -27,7 +27,8 @@
 		</div>
 		<!-- sidebar Start -->
 		<div class="qwe-float-sidebar">
-				<?php get_sidebar(); ?>
+			<h3>archive</h3>
+			<?php get_sidebar(); ?>
 		</div>
 		<!-- sidebar END -->
 		<!-- newsletter or gift start-->

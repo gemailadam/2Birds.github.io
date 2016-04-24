@@ -69,22 +69,21 @@
 }
 
 
-
-
-.galleryPreviewImage {position: relative;z-index:-1;}
-.galleryPreviewImage img {width: 100%;position: absolute;}
-
-
 .galleryPreviewContainer {
     position: relative;
 }
 
+.galleryPreviewImage {
+  position: relative;
+  z-index:-1;
+}
 
-.galleryPreviewImage img{/*that mean all images disappear exept img.previewImage1 [Next]*/
-    display: none;
-    position: absolute;/* new change - prev > position: relative;*/
-    top:0;
-
+/*that mean all images disappear exept img.previewImage1 [Next]*/
+.galleryPreviewImage img {
+  display: none;
+  width: 100%;
+  position: absolute;/* new change - prev > position: relative;*/
+  top:0;
 }
 
 .galleryPreviewImage img.previewImage1 {

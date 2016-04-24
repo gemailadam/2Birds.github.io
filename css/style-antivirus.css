@@ -369,6 +369,16 @@ font-size: 3vw;
   /*box-shadow: 2px 2px 4px #000 ;*/
   vertical-align: bottom;
 }
+.postedby a:nth-child(3) {
+  display: inline-block;
+  background-color: #800000;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  /*box-shadow: 2px 2px 4px #000 ;*/
+  vertical-align: bottom;
+}
+
 .postedby .author-zxc {
   margin: 4% 0 0 1%; 
   padding: 1% 1%;

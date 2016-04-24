@@ -90,6 +90,22 @@ select:focus{background-color:;}
 
 .qwe-nav-rtl {}
 
+
+
+
+/*****************************/
+/******** wp-activate ********/
+/*****************************/
+.wp-activate-container {
+	background-color: #fff;
+padding: 20%;
+margin-top: 5%;
+}
+.wp-activate-container #key {width: 30%;}
+.wp-activate-container #submit {width: 30%;}
+
+
+
 /* section.site-title p:first-letter {font-size: 1.5em;} */
 /* section .title-description a:before { content: open-quote; } */
 /* section .title-description a:after { content: close-quote; } */

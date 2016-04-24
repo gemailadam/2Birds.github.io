@@ -101,4 +101,42 @@ function new_excerpt_more_zxc( $more ) {
 add_filter( 'excerpt_more', 'new_excerpt_more_zxc' );
 
 
+// view count popular posts
+
+function observePostViews_zxc($postID) 
+{
+$count_key = 'post_views_count';
+$count = get_post_meta($postID, $count_key, true);
+if($count=='')
+	{
+	$count = 0;
+	delete_post_meta($postID, $count_key);
+	add_post_meta($postID, $count_key, '0');
+	}
+else
+	{
+	$count++;
+	update_post_meta($postID, $count_key, $count);
+	}
+}
+
+// fetch most popular posts
+
+function fetchPostViews_zxc($postID)
+{
+$count_key = 'post_views_count';
+$count = get_post_meta($postID, $count_key, true);
+if($count=='')
+	{
+	delete_post_meta($postID, $count_key);
+	add_post_meta($postID, $count_key, '0');
+	return "0 View";
+	}
+	return $count.' Views';
+}
+
+
+
+post_slice_zxc
+
 ?>

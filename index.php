@@ -33,6 +33,7 @@
 		</div>
 		<!-- sidebar Start -->
 		<div class="qwe-float-sidebar">
+			<h3>archive</h3>
 				<?php get_sidebar(); ?>
 		</div>
 		<!-- sidebar END -->

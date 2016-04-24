@@ -24,18 +24,6 @@ if ( ! isset( $content_width ) ) {
 
 
 
-/* nav arabic */
-
-function qwe_register_nav_ar_menu(){
-
-    $location='header-ar';
-    $description='Primary menu ar';
-    register_nav_menu( $location, $description );
-
-}
-add_action('after_setup_theme','qwe_register_nav_ar_menu' );
-
-
 function qwe_register_nav_menu(){
 
     $location='header';
@@ -48,12 +36,12 @@ add_action('after_setup_theme','qwe_register_nav_menu' );
 /* register widgets for sidebare*/
 
 /////////////////////////////////////////////
-///////////// sidebare 1 ////////////////////
+///////////// sidebar float /////////////////
 /////////////////////////////////////////////
 
-function qwe_register_right_sidebar() {
-$args = array('name' =>'sidebar1',
-	'id'=>'sidebar1' ,
+function qwe_register_float_sidebar() {
+$args = array('name' =>'sidebar-float',
+	'id'=>'sidebar-float' ,
 	'description'=> 'add wigjet to right sidebar',
 	'class'  => '',
 	'before_widget' => '<li id="%1$s" class="widget %2$s">',
@@ -65,7 +53,7 @@ register_sidebar($args);
 
 }
 
-add_action('widgets_init','qwe_register_right_sidebar');
+add_action('widgets_init','qwe_register_float_sidebar');
 
 
 /////////////////////////////////////////////
@@ -143,5 +131,103 @@ register_sidebar($args);
 }
 
 add_action('widgets_init','register_newsletter_social_qwe');
+
+
+/* nav arabic */
+
+function qwe_register_nav_ar_menu(){
+
+    $location='headerarabic';
+    $description='Primary menu arabic';
+    register_nav_menu( $location, $description );
+
+}
+add_action('after_setup_theme','qwe_register_nav_ar_menu' );
+
+
+/////////////////////////////////////////////
+////////// sidebare arabic float   //////////
+/////////////////////////////////////////////
+
+function qwe_register_float_sidebar_arabic() {
+$args = array('name' =>'sidebar-float-arabic',
+	'id'=>'sidebar-float-arabic' ,
+	'description'=> 'add wigjet to arabic sidebar',
+	'class'  => '',
+	'before_widget' => '<li id="%1$s" class="widget %2$s">',
+	'after_widget'  => '</li>',
+	'before_title'  => '<h2 class="widgettitle">',
+	'after_title'   => '</h2>' ); 
+
+register_sidebar($args);
+
+}
+
+add_action('widgets_init','qwe_register_float_sidebar_arabic');
+
+
+/////////////////////////////////////////////
+////////// Footer 1 arabic    ///////////////
+/////////////////////////////////////////////
+
+function qwe_register_footer_1_arabic() {
+$args = array('name' =>'footer_1_arabic',
+	'id'=>'footer_1_arabic' ,
+	'description'=> 'add wigjet to arabic footer 1',
+	'class'  => '',
+	'before_widget' => '<li id="%1$s" class="widget %2$s">',
+	'after_widget'  => '</li>',
+	'before_title'  => '<h2 class="widgettitle">',
+	'after_title'   => '</h2>' ); 
+
+register_sidebar($args);
+
+}
+
+add_action('widgets_init','qwe_register_footer_1_arabic');
+
+
+/////////////////////////////////////////////
+////////// Footer 1 arabic    ///////////////
+/////////////////////////////////////////////
+
+function qwe_register_footer_2_arabic() {
+$args = array('name' =>'footer_2_arabic',
+	'id'=>'footer-2-arabic' ,
+	'description'=> 'add wigjet to arabic footer 2',
+	'class'  => '',
+	'before_widget' => '<li id="%1$s" class="widget %2$s">',
+	'after_widget'  => '</li>',
+	'before_title'  => '<h2 class="widgettitle">',
+	'after_title'   => '</h2>' ); 
+
+register_sidebar($args);
+
+}
+
+add_action('widgets_init','qwe_register_footer_2_arabic');
+
+/////////////////////////////////////////////
+////////// Footer 1 arabic    ///////////////
+/////////////////////////////////////////////
+
+function qwe_register_footer_3_arabic() {
+$args = array('name' =>'footer_3_arabic',
+	'id'=>'footer_3_arabic' ,
+	'description'=> 'add wigjet to arabic footer 3',
+	'class'  => '',
+	'before_widget' => '<li id="%1$s" class="widget %2$s">',
+	'after_widget'  => '</li>',
+	'before_title'  => '<h2 class="widgettitle">',
+	'after_title'   => '</h2>' ); 
+
+register_sidebar($args);
+
+}
+
+add_action('widgets_init','qwe_register_footer_3_arabic');
+
+
+
 
 ?>

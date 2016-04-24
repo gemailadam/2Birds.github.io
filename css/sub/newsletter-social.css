@@ -37,4 +37,16 @@
 	animation-duration: 2s;
 	animation-delay: 2s;
 	animation-iteration-count: infinite;
-	 }
+}
+
+.benchmarkemaillite_widget-5 {background-color: #000;color:#fff;box-shadow:2px 2px 5px #000;border-radius: 0.5vw}
+.benchmarkemaillite_widget-5 input {
+	background-color:#777;
+	padding-left: 5px;
+	color:#fff;
+	border-radius: 0.5vw;
+	width:22vw;
+	height: 2vw;
+	margin:0.5vw 0.5vw; 
+}
+.benchmarkemaillite_widget-5 {}

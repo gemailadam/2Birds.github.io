@@ -30,13 +30,13 @@
 <!--link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css' -->
 
 <!-- arabic font link -->
-<link rel="stylesheet" type="text/css" href="//www.fontstatic.com/f=jazeera" />
-<link href='https://fonts.googleapis.com/css?family=Raleway:400,100,500,700,900italic' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+<!-- <link rel="stylesheet" type="text/css" href="//www.fontstatic.com/f=jazeera" /> -->
+<!-- <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,500,700,900italic' rel='stylesheet' type='text/css'> -->
+<!-- <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'> -->
 <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,700' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Ubuntu:300|Anton|Russo+One|Limelight' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Ubuntu:300|Anton|Russo+One|Abril+Fatface' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Anton|Russo+One|Kaushan+Script|Fredericka+the+Great' rel='stylesheet' type='text/css'>
+<!-- <link href='https://fonts.googleapis.com/css?family=Ubuntu:300|Anton|Russo+One|Abril+Fatface' rel='stylesheet' type='text/css'> -->
+<!-- <link href='https://fonts.googleapis.com/css?family=Anton|Russo+One|Kaushan+Script|Fredericka+the+Great' rel='stylesheet' type='text/css'> -->
 
 
 <?php wp_head(); ?>
@@ -131,11 +131,17 @@ $my_date = the_date('', '', '', FALSE); echo $my_date;
 
 echo '</a>';
 
+// echo '<a class="author-zxc" href="';
+// the_author_link();
+// echo '">author: ';
+// the_author();
+// echo '</a>';
+
 echo '<a class="author-zxc" href="';
-the_author_link();
-echo '">author: ';
-the_author();
+echo '">By: ';
+the_author_posts_link(); 
 echo '</a>';
+
 // echo '<a class="category-zxc">';
 // the_category_link();
 the_category();

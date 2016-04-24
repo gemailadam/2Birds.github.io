@@ -9,5 +9,5 @@
 </div>
 
 <div class="qwe-copyright">
-<a href="http://www.inspireforweb.com/Support">&copy;copyright adam <?php echo date('Y') ?> </a>
+<a href="http://www.inspireforweb.com/Support">&copy;copyright adam <?php echo date('Y') ?></a>
 </div>

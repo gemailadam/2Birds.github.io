@@ -30,13 +30,13 @@
 <!--link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css' -->
 
 <!-- arabic font link -->
-<link rel="stylesheet" type="text/css" href="//www.fontstatic.com/f=jazeera" />
-<link href='https://fonts.googleapis.com/css?family=Raleway:400,100,500,700,900italic' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+<!-- <link rel="stylesheet" type="text/css" href="//www.fontstatic.com/f=jazeera" /> -->
+<!-- <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,500,700,900italic' rel='stylesheet' type='text/css'> -->
+<!-- <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'> -->
 <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,700' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Ubuntu:300|Anton|Russo+One|Limelight' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Ubuntu:300|Anton|Russo+One|Abril+Fatface' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Anton|Russo+One|Kaushan+Script|Fredericka+the+Great' rel='stylesheet' type='text/css'>
+<!-- <link href='https://fonts.googleapis.com/css?family=Ubuntu:300|Anton|Russo+One|Abril+Fatface' rel='stylesheet' type='text/css'> -->
+<!-- <link href='https://fonts.googleapis.com/css?family=Anton|Russo+One|Kaushan+Script|Fredericka+the+Great' rel='stylesheet' type='text/css'> -->
 
 
 <?php wp_head(); ?>
@@ -50,8 +50,8 @@
 <header class="row header-zxc wrap-odd">
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
-	<div class="nav-zxc nav-common-zxc wrap-50">
-		<?php wp_nav_menu(array('theme_location'=>'header-top-inspire')); ?>
+	<div class="nav-zxc wrap-50">
+		<?php wp_nav_menu(array('theme_location'=>'header-top-home')); ?>
 		<?php dynamic_sidebar('search'); ?>
 	</div>
 	<!-- end navbar -->
@@ -68,8 +68,8 @@
 	</div>
 	<!-- Title END -->
 
-	<div class="nav-primary-zxc nav-common-zxc wrap-50 margin-zxc">
-		<?php wp_nav_menu(array('theme_location'=>'header-primary-inspire')); ?>
+	<div class="nav-primary-zxc wrap-50 margin-zxc">
+		<?php wp_nav_menu(array('theme_location'=>'header-primary-home')); ?>
 	</div>
 
 	<div class="slideshow-zxc margin-zxc col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -78,7 +78,7 @@
 	<?php
 	$slice_zxc=get_template_directory_uri() .'/images/slice.jpg';
 		// <img src="wp-content/themes/inspire.github.io/images/slice.jpg" alt="">
-	echo '<img class="slice-zxc" src="';echo get_theme_mod('logo_zxc',$slice_zxc);echo '" alt=""/>';
+	echo '<img class="slice-zxc" src="';echo get_theme_mod('slice_zxc',$slice_zxc);echo '" alt=""/>';
 	?>
 	</div>
 	<!--div class="slideshow-small-zxc" style="width:20.83333333333333%;float:left;margin-right:4.16666666666667%;"-->
@@ -115,7 +115,15 @@
 <!-- danger don't use width with main or page classes -->
 <div class="row main-zxc">
 <div class="page-zxc col-lg-4 col-md-4 col-sm-4 col-xs-12">
+<h2 class="latest-zxc">Latest</h2>
 <?php
+
+
+$count_posts = wp_count_posts();
+$published_posts_count = $count_posts->publish;
+
+$count_qwe=1;
+
 if (have_posts()) {
 	while (have_posts()) {
 		the_post();
@@ -133,15 +141,35 @@ echo get_the_date('d-m-Y');
 
 echo '</a>';
 
-echo '<a class="author-zxc" href="';
-the_author_link();
+// echo '<a class="author-zxc" href="';
+// the_author_link();
+// echo '">By: ';
+// the_author();
+// echo '</a>';
+
+echo '<p class="author-zxc" href="';
 echo '">By: ';
-the_author();
-echo '</a>';
+the_author_posts_link();
+echo '</p>';
+
 // echo '<a class="category-zxc">';
 // the_category_link();
 // echo '</a>';
 echo '</div>';
+?>
+	<div class="article-zxc">
+	<!--div class="slideshow-big-zxc" style="width:70.83333333333333%;float:left;margin-left:4.16666666666667%;"-->
+	<?php
+	//$post_slice_zxc=get_template_directory_uri() .'/images/slice.jpg';
+	// $post_slice_zxc=get_template_directory_uri() .'/images/slice'..'.jpg';
+	// $reference_id='post_slice_'.$id_zxc.'zxc';
+		// <img src="wp-content/themes/inspire.github.io/images/slice.jpg" alt="">
+	//echo '<img class="article-img-zxc" src="';echo get_theme_mod('post_slice_zxc',$slice_zxc);echo '" alt=""/>';
+	//echo '<img class="article-img-zxc" src="';echo get_theme_mod($reference_id,$slice_zxc);echo '" alt=""/>';
+	the_post_thumbnail();
+	?>
+	</div>
+<?php
 echo '<!-- END post by class -->';
 
 $logo_zxc=get_template_directory_uri() .'/images/circle.jpg';
@@ -154,12 +182,14 @@ echo '</div>';
 echo '<div class="wrap-index-zxc">';
 			echo '<h1 class="page-title-zxc"><a href="';the_permalink();echo '">';the_title();echo'</a></h1>';
 			echo '<hr class="hr-h1"/>';
-for ($count_qwe=1; $count_qwe <=3 ; $count_qwe++) { 
-			$image_qwe=get_template_directory_uri() .'/images/slice'.$count_qwe.'.jpg';
-			$image_id_qwe=array('image1_qwe','image2_qwe','image3_qwe');
-			echo '<img class="previewImage'.$count_qwe.'" src="';echo get_theme_mod($image_id_qwe[$count_qwe],$image_qwe);
-			echo '" alt=""/>';
-}
+
+			// if($count_qwe <= $published_posts_count) {
+			// $image_qwe=get_template_directory_uri() .'/images/slice'.$count_qwe.'.jpg';
+			// $image_id_qwe=array('image1_qwe','image2_qwe','image3_qwe');
+			// echo '<img class="previewImage'.$count_qwe.'" src="';echo get_theme_mod($image_id_qwe[$count_qwe],$image_qwe);
+			// echo '" alt=""/>';
+			// $count_qwe=$count_qwe+1;
+			// }
 			// echo '<div class="page-body-zxc">';
 			// the_content();
 			the_excerpt();
@@ -174,13 +204,13 @@ the_category();
 
 	}
 }
-echo '<div class="pagination-zxc">';
-the_posts_pagination( array(
-    'mid_size' => 1,
-    'prev_text' => __( 'PREV POSTS', 'textdomain' ),
-    'next_text' => __( 'NEXT POSTS', 'textdomain' ),
-) );
-echo '</div>';
+// echo '<div class="pagination-zxc">';
+// the_posts_pagination( array(
+//     'mid_size' => 1,
+//     'prev_text' => __( 'PREV POSTS', 'textdomain' ),
+//     'next_text' => __( 'NEXT POSTS', 'textdomain' ),
+// ) );
+// echo '</div>';
 
 // previous_posts_link( 'PREV POSTS' );next_posts_link( 'NEXT POSTS' );
 ?>
@@ -188,12 +218,22 @@ echo '</div>';
 <!-- end col and page-->
 
 
-<div class="page-popular-zxc col-lg-4 col-md-4 col-sm-4 col-xs-12">
+<div class="page-popular-zxc col-lg-5 col-md-5 col-sm-5 col-xs-12">
+<h2 class="recent-zxc">Most Popular</h2>
 <?php
+// To Display Most popular 
+query_posts('meta_key=post_views_count&orderby=meta_value_num&order=DESC');
+
+
+$count_posts = wp_count_posts();
+$published_posts_count = $count_posts->publish;
+
+$count_qwe=1;
+
 if (have_posts()) {
 	while (have_posts()) {
 		the_post();
-		echo '<div class="popular-zxc" id="post-';the_ID();echo '"';post_class();echo '>';
+		echo '<div id="post-';the_ID();echo '"';post_class();echo '>';
 
 		// echo '<div class="post-wrapper-zxc">';
 echo '<div class="postedby">';
@@ -203,21 +243,36 @@ the_permalink();
 echo '">';
 // the_date( get_option( 'date_format', 'F Y'));
 // $my_date = the_date('', '', '', FALSE); echo $my_date;
-// the_date('Y-m-d', '<h2>', '</h2>');
-// the_date('d-m-Y');
 echo get_the_date('d-m-Y');
+
 echo '</a>';
 
-echo '<a class="author-zxc" href="';
-the_author_link();
+// echo '<a class="author-zxc" href="';
+// the_author_link();
+// echo '">By: ';
+// the_author();
+// echo '</a>';
+
+echo '<p class="author-zxc" href="';
 echo '">By: ';
-the_author();
-echo '</a>';
+the_author_posts_link(); 
+echo '</p>';
+
 // echo '<a class="category-zxc">';
 // the_category_link();
-the_category();
 // echo '</a>';
 echo '</div>';
+?>	
+	<div class="article-zxc">
+	<!--div class="slideshow-big-zxc" style="width:70.83333333333333%;float:left;margin-left:4.16666666666667%;"-->
+	<?php
+	//$slice_zxc=get_template_directory_uri() .'/images/slice.jpg';
+		// <img src="wp-content/themes/inspire.github.io/images/slice.jpg" alt="">
+	//echo '<img class="article-img-zxc" src="';echo get_theme_mod('logo_zxc',$slice_zxc);echo '" alt=""/>';
+	the_post_thumbnail();
+	?>
+	</div>
+<?php
 echo '<!-- END post by class -->';
 
 $logo_zxc=get_template_directory_uri() .'/images/circle.jpg';
@@ -231,6 +286,13 @@ echo '<div class="wrap-index-zxc">';
 			echo '<h1 class="page-title-zxc"><a href="';the_permalink();echo '">';the_title();echo'</a></h1>';
 			echo '<hr class="hr-h1"/>';
 
+			// if($count_qwe <= $published_posts_count) {
+			// $image_qwe=get_template_directory_uri() .'/images/slice'.$count_qwe.'.jpg';
+			// $image_id_qwe=array('image1_qwe','image2_qwe','image3_qwe');
+			// echo '<img class="previewImage'.$count_qwe.'" src="';echo get_theme_mod($image_id_qwe[$count_qwe],$image_qwe);
+			// echo '" alt=""/>';
+			// $count_qwe=$count_qwe+1;
+			// }
 			// echo '<div class="page-body-zxc">';
 			// the_content();
 			the_excerpt();
@@ -239,27 +301,31 @@ echo '<div class="wrap-index-zxc">';
 
 		// echo '</div>';
 echo '</div>';
+the_category();
 		echo '</div>';
 		echo '<hr class="hr" />';
 
 	}
 }
-echo '<div class="pagination-zxc">';
-the_posts_pagination( array(
-    'mid_size' => 3,//mid_size (int) - How many page numbers to display to either side of the current page. Defaults to 1. 
-    'prev_text' => __( 'PREV POSTS', 'textdomain' ),
-    'next_text' => __( 'NEXT POSTS', 'textdomain' ),
-    'screen_reader_text' => 10 //screen_reader_text (string) - Text meant for screen readers. Defaults to “Posts navigation”. 
-) );
-echo '</div>';
+// echo '<div class="pagination-zxc">';
+// the_posts_pagination( array(
+//     'mid_size' => 1,
+//     'prev_text' => __( 'PREV POSTS', 'textdomain' ),
+//     'next_text' => __( 'NEXT POSTS', 'textdomain' ),
+// ) );
+// echo '</div>';
 
 // previous_posts_link( 'PREV POSTS' );next_posts_link( 'NEXT POSTS' );
 ?>
 </div>
 <!-- end col and page popular-->
 
-<div class="sidebar-zxc col-lg-4 col-md-4 col-sm-8 col-xs-12">
+<div class="sidebar-zxc col-lg-3 col-md-3 col-sm-8 col-xs-12">
 <?php dynamic_sidebar('sidebar-inspire'); ?>
+<h2>List of authors:</h2>
+<ul>
+<?php wp_list_authors(); ?>
+</ul>
 </div>
 <!-- end col and sidebar-->
 
